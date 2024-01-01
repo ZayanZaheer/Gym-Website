@@ -1,0 +1,1088 @@
+/*Common Code*/
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    color: rgb(16, 44, 82);
+}
+
+header {
+    background-color: rgb(16, 44, 82); 
+    color: white;   
+    padding: 20px, 20px, 20px, 0px;
+    font-size: larger;
+}
+
+.header-top li #Joinbtn {
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+    padding: 5px;
+}
+
+nav ul {
+    justify-content: space-between;
+    font-size: 19px;
+}
+
+nav {
+    width: 100%;
+}
+
+.Joinbtn {
+    width: 140px;
+    height: 170px;
+    padding: 5px;
+    font-size: larger;
+    font-weight: bold;
+    background-color: white;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header-top img {
+    width: 300px;
+    height: 170px;
+}
+
+.header-top ul {
+    display: flex;
+    margin-top: 70px;
+}
+
+.header-top li {
+    margin: 5px 20px 5px 20px;
+    
+}
+
+.header-top li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    width: 100px;
+}
+
+footer {
+    margin-top: 50px;
+    border-top: 5px solid rgb(16, 44, 82) ;
+    background-color: white;
+    color:rgb(16, 44, 82);
+    padding: 2px 5px 4px 10px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.foot {
+    display:flex;
+    justify-content:space-between;
+    flex: 1;
+}
+
+.con {
+    flex: 1;
+    gap: 20px;
+    margin-left: 20px;
+    display: flex;
+}
+
+.social {
+    list-style: none;
+    margin-right: 10px;
+    padding: 5px 15px;
+    gap: 50px;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+    margin: 12px 12px 0px 12px;
+}
+
+.foot .con a{
+    text-decoration: none;
+}
+
+/*Index*/
+
+#FirstPage {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-image: linear-gradient(rgb(0,0,0,0.75), rgb(0,0,0,0.75))
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+}
+
+.part1 {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+#detailQ {
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.one {
+    font-size: 55px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    margin-left: 0;
+    
+}
+
+.two {
+    font-size: 24px;
+    margin-right: 25px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around ;
+    gap: 70px;
+    margin-bottom: 5px;
+    
+}
+
+.container1 figcaption {
+    text-align: center;
+}
+
+.container2 {
+    display: flex;
+    gap: 70px;
+}
+
+.container2 img {
+    width: 310px;
+    height: 210px;
+    border-radius: 35px;
+    transition: transform .2s;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+}
+
+.container2 img:hover {
+    transform: scale(1.5);
+    height: auto;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    gap: 10px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+/*Contact Us*/
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.Contact_image {
+    width: 100%;
+    height: 500px;
+}
+
+.circle {
+    position: absolute;
+    top: 150px; /* Center vertically */
+    left: 100px; /* Adjust this value to control the position of the circle */
+    width: 150px; /* Adjust the size of the circle as needed */
+    height: 150px; /* Should be the same as width for a perfect circle */
+    background-color: rgb(255, 255, 255); /* Background color with transparency */
+    border-radius: 50%; /* Creates a circle */
+    text-align: center;
+    color: rgb(16, 44, 82); /* Text color */
+    padding: 10px; /* Adjust the padding as needed */
+}
+
+.circle p {
+    margin: 10px;
+    padding: 0;
+}
+
+.top-bar{
+    border: 2px solid rgb(16, 44, 82);
+    margin: 10px 40px;
+}
+
+.contact-container {
+    display: flex;
+    margin-left: 450px;
+    align-items: center;
+}
+
+.vertical-bar {
+    border: 2px solid rgb(16, 44, 82);
+    margin: 10px 40px;
+    height: 50px;
+}
+
+.bottom-bar{
+    border: 2px solid rgb(16, 44, 82);
+    margin: 10px 40px;
+}
+
+#Feedback {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: larger;
+}
+
+#Contact_Form {
+    border: 2px solid rgb(16, 44, 82);
+    border-radius: 10%;
+    margin: auto;
+    padding: 30px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+
+    #comment{
+        width: 97%;
+        border-radius: 15px;
+        padding: 10px;
+        margin: auto;
+    }
+
+    .FeedBack_Input {
+        width: 97%;
+        padding: 8px;
+    }   
+}
+
+#FeedBack_Input_2 {
+    padding: 8px;
+    width: 50%;
+    margin-right: 320px;
+}
+
+.FeedBack_Input, #FeedBack_Input_2{
+    margin-bottom: 10px;
+}
+
+#Message_BTN{
+    width: 300px;
+    color: white;
+    background-color: rgb(16, 44, 82);
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: larger;
+}
+
+/*Terms & Conditions*/
+
+#TermContainer {
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+    color: rgb(16, 44, 82);
+}
+
+#main-heading,#last-update {
+    text-align: center;
+    font-weight: bold;
+}
+
+h5,#TermWelcome {
+    font-size: large;
+    color: rgb(16, 44, 82);
+    font-weight: bold;
+}
+
+.t {
+    margin-left: 20px;
+    margin-bottom: 2px;
+    list-style: circle inside;
+}
+
+/*Meal Plan*/
+
+.Mealimg {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+#MealType {
+    color: rgb(16, 44, 82);
+    text-align: center;
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+.MealMargin {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.MealMargin h4 {
+    margin-bottom: 10px;
+}
+
+.Cutdiv {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20%;
+    width: 50%;
+    padding-bottom: 50px;
+    color: rgb(16, 44, 82);
+}
+
+.CutDiv {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    color: rgb(16, 44, 82);
+}
+
+.CutDiv h3 {
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background-color: rgb(16, 44, 82);
+    margin-bottom: 8px;
+}
+
+.Cutdiv img {
+    width: 300px;
+    height: auto;
+    border-radius: 25%;
+    padding-left: 20px;
+}
+
+/*Our Team*/
+
+.Teamimg img {
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+}
+
+#Join_Team_Btn {
+    position: absolute;
+    right: 10%;
+    bottom: 40%;
+    background-color: rgb(16, 44, 82);
+    color: white;
+    font-size: xx-large;
+    width: 200px;
+    border-radius: 25px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.TeamTitle {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(16, 44, 82);
+    font-size: xx-large;
+}
+
+.mem {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    color: rgb(16, 44, 82);
+}
+
+.mem img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.memdetail {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.memdetail2 {
+    margin-left: 20px;
+}
+
+/*Join Us*/
+
+#JoinForm {
+    width: 50%;
+    margin: auto;
+}
+
+#JoinHeading1 {
+    text-align: center;
+    color: rgb(16, 44, 82);
+    margin-top: 20px;
+}
+
+.NameIdContact {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-container,
+.id-contact-container {
+    display: flex;
+}
+
+.name-container input,
+.id-contact-container input {
+    width: 50%;
+    margin: 5px 5px;
+}
+
+#mail {
+    width: 98%;
+    margin: 5px 5px;
+}
+
+#Level {
+    width: 30%;
+    margin: 5px 50px;
+    padding: 5px;
+    
+}
+
+#Dual {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+#CourseAddress {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 100px;
+    padding-top: 20px;
+}
+
+#ExorNonEx {
+    width: 30%;
+    padding: 5px;
+    margin: 15px 5px 5px 20px;
+}
+
+.Outer {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+#notes {
+    padding: 5px 56px;
+    margin-top: 15px;
+}
+
+#notes li {
+    list-style: circle;
+}
+
+/*Cutting Meal & Bulking Meal*/
+
+#outermost {
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: wrap; /* added flex-wrap property */
+} 
+
+.para {
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#cutting {
+    text-align: center;
+}
+
+.recipe img{
+    max-width: 100%; /* changed width property to max-width */
+    border-radius: 15px;
+    align-self: center;
+} 
+
+.recipe {
+    /* position: relative; */
+    padding: 10px;
+    width: 100%;
+}
+
+.box{
+    display: flex;
+    /* justify-content:space-between; */
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.test {
+    margin-left: 10px;
+    width: 50%;
+}
+
+#inner, #inner2 {
+    display: flex;
+    padding: 8px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+
+.time {
+    width: 20%;
+    transform: rotate(-90deg);
+    font-size: x-large;
+    background-color: rgb(16, 44, 82);
+    color: white;
+    padding: 8px 50px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.foodinfo {
+    margin-left: 50px;
+}
+
+.foodinfo li{
+    list-style: circle;
+}
+
+.change, .foodname {
+    text-align: center;
+}
+
+.change {
+    margin-top: 80px;
+}
+
+/*Login Page*/
+#LPH {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 34px;
+}
+
+#Outer_Container {
+    background-color: rgb(16, 44, 82);
+    display: flex;
+    margin: auto;
+    width: 60%;
+    height: 500px;
+    border: 2px solid rgb(16, 44, 82);
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+#Inner_Container_1{
+    background-color: white;
+    width: 70%;
+    border-radius: 15px;
+}
+
+#Login_Form {
+    text-align: center;
+    margin: auto;
+    width: 65%;
+    margin: 139px 110px;
+}
+
+#Login_Form #LoginWelcome {
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+#Login_Form input{
+    margin: 10px 5px;
+    width: 420px;
+    font-size: medium;
+    padding: 3px;
+}
+
+#Login_Form .dividor {
+    width: 430px;
+    margin: 5px;
+}
+
+#Ask, #OP {
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#Inner_Container_2 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+}
+
+#Sign_Up {
+    color: rgb(16, 44, 82);
+    align-self: center;
+    width: 50%;
+    padding: 5px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#LoginBtn {
+    color: white;
+    background-color: rgb(16, 44, 82);
+    margin-top: 40px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: large;
+}
+
+/* MemberShip Form */
+
+#MembershipForm {
+    margin: auto;
+    width: 50%;
+    padding: 10px 15px 10px 15px;
+    padding: 19px;
+    display: flex;
+    flex-direction: column;
+}
+
+#PersonalInfo ::placeholder, #StudentData ::placeholder {
+    font-size: large;
+    padding-left: 10px;
+}
+
+#PersonalInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px 15px 5px;
+    text-align: center;
+}
+
+#BMI {
+    display: flex;
+    padding-left: 100px;
+    justify-content: center;
+}
+
+#EmailGender {
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+#Age {
+    width: 25%;
+}
+
+#AddressLine {
+    height: 30px;
+}
+
+#PersonalInfo input, #StudentData input {
+    margin: 5px;
+}
+
+.info {
+    width: 35%;
+    height: 30px;
+    gap: 50px;
+}
+
+#StudentData {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px 15px 5px;
+    text-align: center;
+}
+
+#Course {
+    width: 97.6%;
+    margin: 10px;
+}
+
+#G {
+    margin: 10px;
+    border: 1px solid;
+    padding: 10px;
+}
+
+#spantem {
+    margin:20px 5px 20px 5px;  
+}
+
+#MedicalQuestionier {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    padding: 10px;
+    margin: auto;
+    width:  100%;
+}
+
+#Questions p, #Q{
+    padding-bottom: 15px;
+    width: 50%;
+}
+
+#Answers {
+    display: flex;
+    gap: 20px;
+    margin-right: 8px;
+}
+
+#YesAnswer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.option {
+    margin-bottom: 15px;
+}
+
+#NoAnswer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#button1 {
+   width: 200px;
+   height: auto;
+   font-size: large;
+   color: white;
+   background-color: rgb(16, 44, 82);
+   border-radius: 15px;
+   align-self: center;
+}
+
+#button1:hover {
+    cursor: pointer;
+}
+
+/* WorkOut Pages */
+
+#maincontainer {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#maincontainer h1 {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#maincontainer hr {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+#last {
+    margin-bottom: 10px;
+}
+
+.exercise {
+    padding-top: 20px;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 25px;
+}
+
+.imagelist {
+    display: flex;
+    gap: 10px;
+}
+
+.imagelist img {
+    width: 300px;
+    height: 200px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+}
+
+.imagelist ul p {
+    padding-top: 50px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.imagelist li {
+    padding: 5px;
+}
+
+.exerciseexplaination p {
+    padding: 5px;
+}
+
+/* Style the Images Used to Trigger the Modals */
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg:hover {
+    opacity: 0.7;
+}
+
+/* The Modals (Background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+.caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+/* Instructor Page */
+
+.imginstr {
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+}
+
+.imginstr p {
+    margin: 20px 20px 20px 30px;
+    padding-top: 20px;
+    font-size: x-large
+}
+
+#title {
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 35px;
+}
+
+.imginstr img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+}
+
+.Instr {
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    width: 75%;
+}
+
+
+#Names {
+    text-align: center;
+    border: 2px solid rgb(16, 44, 82);
+    background-color: rgb(16, 44, 82);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+
+#Names h2,
+#Names p {
+    color: white;
+    margin-bottom: 5px;
+}
+
