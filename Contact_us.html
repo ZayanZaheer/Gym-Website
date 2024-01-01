@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <img src="Logo.png" alt="">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="InstructorPage.html">Instructors</a></li>
+            <li><a href="MealPlan.html">Meal Plans</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="bookASlot.html">Book a Slot</a></li>
+            <li><a href="LoginPage.html">Login</a></li>
+            <li><a href="MemberShipForm.html">Become a Member</a></li>
+          </ul>
+        </nav>
+        <a href="JoinUs.html"><button class="Joinbtn">Join Us</button></a> 
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <img class="Contact_image" src="Images/Contact us background.jpg" alt="Image" />
+        <div class="circle">
+          <p>Contact Us</p>
+          <p>Feel free to contact us at anytime</p>
+        </div>
+      </div>
+      <div class="top-bar"></div>
+      <div class="contact-container">
+        <p class="Address">
+          Uni Fitness Student Assosication,<br />
+          D-03, Asia Pacific University of Technology and Innovation, <br />
+          Bukit Jalil, 57000, Kuala Lumpur
+        </p>
+        <div class="vertical-bar"></div>
+        <p class="Details">
+          Service hotline: +60 222 2424 104 <br />
+          info@unifitness.com
+        </p>
+      </div>
+      <div class="bottom-bar"></div>
+      <h4 id="Feedback"><b>We Value your Feedback</b></h4>
+      <form
+        action="index.php"
+        method="post"
+        enctype="multipart/form-data"
+        id="Contact_Form"
+      >
+        <input type="text" placeholder="Name* |" class="FeedBack_Input" />
+        <br />
+        <input
+          type="email"
+          id="Email"
+          placeholder="Email* |"
+          class="FeedBack_Input"
+        />
+        <br />
+        <input
+          type="tel"
+          placeholder="Contact* |"
+          pattern="+06-[0-9]{10}"
+          id="FeedBack_Input_2"
+        />
+        <br />
+        <input
+          type="text"
+          placeholder="Membership No |"
+          id="FeedBack_Input_2"
+        />
+        <br />
+        <textarea
+          id="comment"
+          placeholder="Message: |"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <br />
+        <button type="button" id="Message_BTN">Send Message</button>
+      </form>
+    </main>
+    <footer>
+      <div class="foot">
+        <div class="con">
+          <p><a href="Terms&Condition.html">Terms and conditions</a></p>
+          <p><a href="Contact_us.html">Contact us</a></p>
+          <li><a href="OurTeam.html">Our Team</a></li>
+        </div>
+        <div class="social">
+          <img src="IG_LOGO.svg" alt="Insta">
+          <img src="FB_LOGO.svg" alt="facebook">
+          <img src="X_LOGO.svg" alt="X">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

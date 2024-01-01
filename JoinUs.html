@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="Logo.png" alt="">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="InstructorPage.html">Instructors</a></li>
+                    <li><a href="MealPlan.html">Meal Plans</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="bookASlot.html">Book a Slot</a></li>
+                    <li><a href="LoginPage.html">Login</a></li>
+                    <li><a href="MemberShipForm.html">Become a Member</a></li>
+                </ul>
+            </nav>
+            <a href="JoinUs.html"><button class="Joinbtn">Join Us</button></a> 
+        </div>
+       </header>
+       <main>
+            <h1 id="JoinHeading1">Join Our Team</h1>
+            <form action="index.php" method="post" enctype="multipart/form-data" id="JoinForm">
+                <div class="NameIdContact">
+                    <div id="Names">
+                        <h2>Personal Information</h2>
+                    </div>
+                    <div class="name-container">
+                        <input type="text" placeholder="First Name* |">
+                        <input type="text" placeholder="Last Name* |">
+                    </div>
+                    <div class="id-contact-container">
+                        <input type="text" placeholder="Student ID* |">
+                        <input type="text" placeholder="Contact* |">
+                    </div>
+                </div>
+                <input type="email" placeholder="Email*" id="mail">
+                <div id="Names" style="margin-top: 10px; margin-bottom: 0px;">
+                    <h2>Course Details</h2>
+                </div>
+                <div id="Dual">
+                    <div id="Level">
+                        <label for="Level">Select one* |</label><br>
+                        <input type="radio" id="Degree" name="studentType">
+                        <label for="Degree">Degree Student</label><br>
+                        <input type="radio" id="MastersStudent" name="studentType">
+                        <label for="MastersStudent">Masters Student</label><br>
+                        <input type="radio" id="PHDStudent" name="studentType">
+                        <label for="PHDStudent">PHD Student</label><br>
+                    </div>
+                    
+                    <div id="CourseAddress">
+                        <input type="text" placeholder="Course* |">
+                        <input type="text" placeholder="Address line 1* |">
+                        <input type="text" placeholder="Address line 2* |">
+                    </div>
+                </div>
+                <div id="Names">
+                    <h2>Personal Information</h2>
+                </div>
+                <div class="Outer">
+                    <div id="ExorNonEx">
+                        <label>Join as* |</label><br>
+                        <input type="radio" id="Non-Ex">
+                        <label for="Non-Ex">Non-Executive Member</label><br>
+                        <input type="radio" id="Ex">
+                        <label for="Ex">Executive Member</label><br>
+                    </div>
+                    
+                    <div id="ExOnly">
+                        <label>For Executive Applicants Only* |</label><br>
+                        <label>
+                            <input type="radio" id="Prez">
+                            President
+                        </label><br>
+                        <label>
+                            <input type="radio" id="VicePres">
+                            Vice President
+                        </label><br>
+                        <label>
+                            <input type="radio" id="MMC">
+                            Marketing & Media Coordinator
+                        </label><br>
+                        <label>
+                            <input type="radio" id="TEM">
+                            Treasurer & Event Manager
+                        </label><br>
+                    </div>
+                </div>
+
+                <div id="notes">
+                    <h4 style="font-size: larger;">Note</h4>
+                    <br>
+                    <ul>
+                        <li><p>Non-Executive Membership applications will be processed withing two(2) working days and applicant will be notified of membership through Text Message</p></li>
+                        <br>
+                        <li><p>Executive Membership applications will placed on hold until the next election. During this period, the applicant may work with us as a non-executive member. The Next election date and confirmation as Executive member will be notified via text Message</p></li>
+                    </ul>
+                </div>
+                
+                
+                
+
+            </form>
+        </main>
+       <footer>
+        <div class="foot">
+            <div class="con">
+                <p><a href="Terms&Condition.html">Terms and conditions</a></p>
+                <p><a href="Contact_us.html">Contact us</a></p>
+                <li><a href="OurTeam.html">Our Team</a></li>
+            </div>
+            <div class="social">
+                <img src="IG_LOGO.svg" alt="Insta">
+                <img src="FB_LOGO.svg" alt="facebook">
+                <img src="X_LOGO.svg" alt="X">
+            </div>
+        </div>
+       </footer>
+</body>
+</html>

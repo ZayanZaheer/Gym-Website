@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Gym</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="Logo.png" alt="">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="InstructorPage.html">Instructors</a></li>
+                    <li><a href="MealPlan.html">Meal Plans</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="bookASlot.html">Book a Slot</a></li>
+                    <li><a href="LoginPage.html">Login</a></li>
+                    <li><a href="MemberShipForm.html">Become a Member</a></li>
+                </ul>
+            </nav>
+            <a href="JoinUs.html"><button class="Joinbtn">Join Us</button></a> 
+        </div>
+    </header>
+
+    <main>
+        <h1 style="text-align: center; margin-top: 20px;"> Gym Membership Form</h1>
+        <form action="index.php" method="post" enctype="multipart/form-data" id="MembershipForm">
+            <div id="PersonalInfo">
+                <h3 style="border: 2px solid rgb(16, 44, 82); color: white; background-color: rgb(16, 44, 82); height: 30px; border-radius: 5px;">Personal Information</h3>
+                <div>
+                    <input type="text" placeholder="First Name* |" class="info">
+                    <input type="text" placeholder="Last Name* |" class="info">
+                </div>
+                <div>
+                    <input type="date" placeholder="D.O.B* |" class="info">
+                    <input type="tel" pattern="+06-[0-9]{10}" placeholder="Contact* |" class="info">
+                </div>
+                <div id="EmailGender">
+                    <input type="email" placeholder="Email* |" class="info">
+                    <span>
+                        <label for="gender" class="info">Gender* | 
+                            <input type="radio" name="gender">
+                            <label for="Male">Male</label>
+                            <input type="radio" name="gender">
+                            <label for="Female">Female</label>
+                        </label>
+                    </span>
+                </div>
+                <div id="BMI">
+                    <input type="text" placeholder="Age* |" id="Age">
+                    <div>
+                        <input type="text" placeholder="Height* |" >
+                        <input type="text" placeholder="Weight* |" >
+                    </div>
+                </div>
+                <input type="text" placeholder="Address line* |" id="AddressLine">
+            </div>
+            <div id="StudentData">
+                <h3 style="border: 2px solid rgb(16, 44, 82); color: white; background-color: rgb(16, 44, 82); height: 30px; border-radius: 5px;">Course Details</h3>
+                <span id="spantem">
+                    <label for="grade" class="info" id="G">Select One* |
+                        <input type="radio" name="grade">
+                        <label for="degree">Degree Student</label>
+                        <input type="radio" name="grade">
+                        <label for="masters">Masters Student</label>
+                        <input type="radio" name="grade">
+                        <label for="phd">Phd Student</label>
+                    </label>
+                </span>
+                <input type="text" placeholder="Course* |" class="info" id="Course">
+                <div>
+                    <input type="text" placeholder="Current year* |" class="info" id="year">
+                    <input type="text" placeholder="Student ID* |" class="info" id="ID">
+                </div>
+            </div>
+            <h3 style="border: 2px solid rgb(16, 44, 82); color: white; background-color: rgb(16, 44, 82); height: 30px; border-radius: 5px; text-align: center;">Medical Questionier</h3>
+            <div id="MedicalQuestionier">
+                <div id="Questions">
+                    <h3 id="Q">Questions</h3>
+                    <p id="Q1">1. Do you frequently have pains in your chest?</p>
+            
+                    <p id="Q2">2. Do you frequently feel faint or have dizzy spells?</p>
+            
+                    <p id="Q3">3. Do you have difficulty with physical exercise?</p>
+            
+                    <p id="Q4">4. Do you have a chronic illness? List Down:</p>
+            
+                    <p id="Q5">5. Do you have a history of lung or respiratory problem?</p>
+            
+                    <p id="Q6">6. Do you have diabetes?</p>
+            
+                    <p id="Q7">7. Do you smoke? If yes, number of packs / day</p>
+            
+                    <p id="Q8">8. Do you have high blood cholesterol?</p>
+            
+                    <p id="Q9">9. Do you have any orthopaedic problem?</p>
+            
+                    <p id="Q10">10. Are you pregnant?</p>
+            
+                    <p id="Q11">11. Do you have PCOD/PCOS?</p>
+                </div>
+                <div id="Answers">
+                    <div id="YesAnswer">
+                        <h3 id="Y">Yes</h3>
+                        <br>
+                        <input type="radio" name="q1" value="yes" id="q1_yes" class="option">
+                        
+                        <input type="radio" name="q2" value="yes" id="q2_yes" class="option">
+                        
+                        <input type="radio" name="q3" value="yes" id="q3_yes" class="option">
+                        
+                        <input type="radio" name="q4" value="yes" id="q4_yes" class="option">
+                        
+                        <input type="radio" name="q5" value="yes" id="q5_yes" class="option">
+                        
+                        <input type="radio" name="q6" value="yes" id="q6_yes" class="option">
+                        
+                        <input type="radio" name="q7" value="yes" id="q7_yes" class="option">
+                        
+                        <input type="radio" name="q8" value="yes" id="q8_yes" class="option">
+                        
+                        <input type="radio" name="q9" value="yes" id="q9_yes" class="option">
+                        
+                        <input type="radio" name="q10" value="yes" id="q10_yes" class="option">
+                        
+                        <input type="radio" name="q11" value="yes" id="q11_yes" class="option">
+                    </div>
+                    <div id="NoAnswer">
+                        <h3 id="N">No</h3>
+                        <br>
+                        <input type="radio" name="q1" value="no" id="q1_no" class="option">
+                        
+                        <input type="radio" name="q2" value="no" id="q2_no" class="option">
+                        
+                        <input type="radio" name="q3" value="no" id="q3_no" class="option">
+                        
+                        <input type="radio" name="q4" value="no" id="q4_no" class="option">
+                        
+                        <input type="radio" name="q5" value="no" id="q5_no" class="option">
+                        
+                        <input type="radio" name="q6" value="no" id="q6_no" class="option">
+                        
+                        <input type="radio" name="q7" value="no" id="q7_no" class="option">
+                        
+                        <input type="radio" name="q8" value="no" id="q8_no" class="option">
+                        
+                        <input type="radio" name="q9" value="no" id="q9_no" class="option">
+                        
+                        <input type="radio" name="q10" value="no" id="q10_no" class="option">
+                        
+                        <input type="radio" name="q11" value="no" id="q11_no" class="option">
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="button1">Submit</button>      
+        </form>
+        
+        
+
+    </main>
+
+    <footer>
+        <div class="foot">
+            <div class="con">
+                <p><a href="Terms&Condition.html">Terms and conditions</a></p>
+                <p><a href="Contact_us.html">Contact us</a></p>
+                <li><a href="OurTeam.html">Our Team</a></li>
+            </div>
+            <div class="social">
+                <img src="IG_LOGO.svg" alt="Insta">
+                <img src="FB_LOGO.svg" alt="facebook">
+                <img src="X_LOGO.svg" alt="X">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

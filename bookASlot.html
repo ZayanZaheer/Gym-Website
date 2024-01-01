@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calendar Example</title>
+        <link rel="stylesheet" href="bookASlot.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-top">
+                <h1>Logo</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="InstructorPage.html">Instructors</a></li>
+                        <li><a href="MealPlan.html">Meal Plans</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="bookASlot.html">Book a Slot</a></li>
+                        <li><a href="LoginPage.html">Login</a></li> 
+                        <li><a href="MemberShipForm.html">Become a Member</a></li>
+                    </ul>
+                </nav>
+                <a href="JoinUs.html"><button class="Joinbtn">Join Us</button></a>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="image-container">
+                  <img src="Images/Strong woman.jpg" alt="Picture of a strong women">
+                </div>
+                <div class="calendar-container">
+                  <!-- Button container for previous and next buttons -->
+                  <div class="button-container">
+                    <button class="next-button" onclick="previousMonth()">Previous</button>
+                    <button class="next-button" onclick="nextMonth()">Next</button>
+                  </div>
+                  <div class="calendar" id="calendar"></div>
+                  <button class="book-button" onclick="bookDate()">Book</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="foot">
+                <div class="con">
+                    <p><a href="Terms&Condition.html">Terms and conditions</a></p>
+                    <p><a href="Contact_us.html">Contact us</a></p>
+                </div>
+                <div class="social">
+                    <img src="#" alt="Insta">
+                    <img src="#" alt="facebook">
+                    <img src="#" alt="X">
+                </div>
+            </div>
+        </footer>
+        <script src="bookASlot.js"></script>
+    </body>
+</html>
